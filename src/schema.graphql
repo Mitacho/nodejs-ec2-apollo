@@ -11,7 +11,6 @@ type Book {
 type Query {
   books: [Book]
   book(title: String!): Book
-  hello: String!
 }
 
 type Mutation {
