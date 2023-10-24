@@ -1,3 +1,8 @@
+input AddBookInput {
+  title: String!
+  author: String!
+}
+
 type Book {
   title: String
   author: String
@@ -6,4 +11,8 @@ type Book {
 type Query {
   books: [Book]
   book(title: String!): Book
+}
+
+type Mutation {
+  addBook(book: AddBookInput!): Book
 }
