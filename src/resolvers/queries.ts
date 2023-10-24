@@ -10,6 +10,7 @@ const queries: QueryResolvers = {
 
     return book;
   },
+  hello: () => "Breaking change! :(",
 };
 
 export default queries;
